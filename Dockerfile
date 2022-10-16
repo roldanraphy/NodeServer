@@ -19,8 +19,9 @@ COPY package*.json ./
 
 RUN npm install
 
-RUN apt update
-RUN apt install ffmpeg
+RUN apk update
+RUN apk add
+RUN apk add ffmpeg
 
 COPY . .
 
