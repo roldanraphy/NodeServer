@@ -1,4 +1,4 @@
-FROM node:lts-alpine
+FROM node:16-alpine
 
 ARG BUILD_DATE
 ARG VCS_REF
@@ -17,7 +17,10 @@ WORKDIR /usr/src/app
 
 COPY package*.json ./
 
-RUN npm i
+RUN npm install
+
+RUN apt update
+RUN apt install ffmpeg
 
 COPY . .
 
