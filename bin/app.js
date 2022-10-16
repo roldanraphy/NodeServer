@@ -50,13 +50,26 @@ const config = {
     key: __dirname+'/privatekey.pem',
     cert: __dirname+'/certificate.pem',
   },
+  
+ relay: {
+  ffmpeg: '/usr/bin/ffmpeg',
+  tasks: [
+            {
+                app: 'live',
+                mode: 'push',
+                edge: 'rtmp://157.245.52.184:1935',
+            }
+
+        ]
+   },
+  
   auth: {
     api: true,
     api_user: 'admin',
-    api_pass: 'admin',
+    api_pass: 'admin2022',
     play: false,
     publish: false,
-    secret: 'nodemedia2017privatekey'
+    secret: 'nodeserver2022privatekey'
   }
 };
 
