@@ -51,16 +51,16 @@ const config = {
     cert: __dirname+'/certificate.pem',
   },
   
-  relay: {
-  ffmpeg: '/usr/bin/ffmpeg',
-  tasks: [
-            {
-                app: 'live',
-                mode: 'push',
-                edge: 'rtmp://157.245.52.184:1935',
-            }
-        ]
-   },
+  //relay: {
+  //ffmpeg: '/usr/bin/ffmpeg',
+  //tasks: [
+            //{
+                //app: 'live',
+                //mode: 'push',
+                //edge: 'rtmp://157.245.52.184:1935',
+            //}
+       // ]
+   //},
   
   auth: {
     api: true,
