@@ -21,6 +21,7 @@ RUN npm install
 
 RUN apk add
 RUN apk add ffmpeg
+RUN apk add nano
 
 COPY . .
 
